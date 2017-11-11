@@ -1,0 +1,24 @@
+{
+  "name": "country-tools",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sallar/country-tools.git"
+  },
+  "keywords": [],
+  "author": "Sallar Kaboli <sallar@kaboli.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sallar/country-tools/issues"
+  },
+  "homepage": "https://github.com/sallar/country-tools#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.51"
+  }
+}
