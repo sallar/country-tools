@@ -1,5 +1,7 @@
 # Country Tools
 
+[![Build Status](https://travis-ci.org/sallar/country-tools.svg?branch=master)](https://travis-ci.org/sallar/country-tools)
+
 A simple NodeJS helper for getting information about countries of the world.
 
 ## Usage
