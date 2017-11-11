@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run build && ava",
     "build": "tsc"
   },
   "repository": {
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/sallar/country-tools#readme",
   "devDependencies": {
-    "@types/node": "^8.0.51"
+    "@types/node": "^8.0.51",
+    "ava": "^0.23.0",
+    "typescript": "^2.6.1"
   }
 }
