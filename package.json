@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "npm test",
     "test": "npm run build && ava",
     "build": "tsc"
   },
