@@ -15,3 +15,13 @@ export function getCurrencyFromIso2(countryCode: string): string | null {
   }
   return country.currency[0];
 }
+
+export function findCountryByIso2(countryCode: string): Country | null {
+  const country = data.find(
+    entry => entry.cca2.toLowerCase() === countryCode.toLowerCase()
+  );
+  if (!country) {
+    return null;
+  }
+  return country;
+}
