@@ -54,7 +54,7 @@ findCountryByIso2('XX'); // null
 
 This function returns type `Country` which looks like the following:
 
-```json
+```js
 {
   name: {
     common: "Finland",
