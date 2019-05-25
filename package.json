@@ -22,7 +22,7 @@
   "homepage": "https://github.com/sallar/country-tools#readme",
   "devDependencies": {
     "@types/node": "^8.0.51",
-    "ava": "^0.23.0",
-    "typescript": "^2.6.1"
+    "ava": "^1.4.1",
+    "typescript": "^3.4.5"
   }
 }
