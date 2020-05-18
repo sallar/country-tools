@@ -1,6 +1,6 @@
 {
   "name": "country-tools",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Simple tool for getting information about countries.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
