@@ -1,7 +1,7 @@
 {
   "name": "country-tools",
   "version": "0.2.1",
-  "description": "",
+  "description": "Simple tool for getting information about countries.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/sallar/country-tools#readme",
   "devDependencies": {
-    "@types/node": "^8.0.51",
-    "ava": "^1.4.1",
-    "typescript": "^3.4.5"
+    "@types/node": "^14.0.1",
+    "ava": "^3.8.2",
+    "typescript": "^3.9.2"
   }
 }

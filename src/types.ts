@@ -1,37 +1,46 @@
-export interface Country {
-  name: {
-    common: string;
-    official: string;
-    native: {
-      [language: string]: {
-        official: string;
-        common: string;
-      };
-    };
+// https://github.com/mledoze/countries/blob/master/index.d.ts
+export interface OfficialAndCommon {
+  common: string;
+  official: string;
+}
+
+export interface CountryName extends OfficialAndCommon {
+  native: {
+    [languageCode: string]: OfficialAndCommon;
   };
+}
+
+export interface Currency {
+  name: string;
+  symbol: string;
+}
+
+export interface IntlDirectDialingCode {
+  root: string;
+  suffixes: string[];
+}
+
+export interface Country {
+  name: CountryName;
   tld: string[];
   cca2: string;
   ccn3: string;
   cca3: string;
   cioc: string;
-  currency: string[];
-  callingCode: string[];
-  capital: string;
+  independent: boolean;
+  status: string;
+  currencies: { [currencyCode: string]: Currency };
+  idd: IntlDirectDialingCode;
+  capital: string[];
   altSpellings: string[];
   region: string;
   subregion: string;
-  languages: {
-    [language: string]: string;
-  };
-  translations: {
-    [language: string]: {
-      official: string;
-      common: string;
-    };
-  };
+  languages: { [languageCode: string]: string };
+  translations: { [languageCode: string]: OfficialAndCommon };
   latlng: [number, number];
   demonym: string;
   landlocked: boolean;
   borders: string[];
   area: number;
+  flag: string;
 }
