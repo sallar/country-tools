@@ -55,51 +55,140 @@ findCountryByIso2('XX'); // null
 This function returns type `Country` which looks like the following:
 
 ```js
-{
+const test = {
   name: {
-    common: "Finland",
-    official: "Republic of Finland",
-    native: { fin: [Object], swe: [Object] }
+    common: 'Finland',
+    official: 'Republic of Finland',
+    native: {
+      fin: {
+        official: 'Suomen tasavalta',
+        common: 'Suomi',
+      },
+      swe: {
+        official: 'Republiken Finland',
+        common: 'Finland',
+      },
+    },
   },
-  tld: [".fi"],
-  cca2: "FI",
-  ccn3: "246",
-  cca3: "FIN",
-  cioc: "FIN",
-  currency: ["EUR"],
-  callingCode: ["358"],
-  capital: "Helsinki",
-  altSpellings: [
-    "FI",
-    "Suomi",
-    "Republic of Finland",
-    "Suomen tasavalta",
-    "Republiken Finland"
-  ],
-  region: "Europe",
-  subregion: "Northern Europe",
-  languages: { fin: "Finnish", swe: "Swedish" },
+  tld: ['.fi'],
+  cca2: 'FI',
+  ccn3: '246',
+  cca3: 'FIN',
+  cioc: 'FIN',
+  independent: true,
+  status: 'officially-assigned',
+  currencies: {
+    EUR: {
+      name: 'Euro',
+      symbol: '€',
+    },
+  },
+  idd: {
+    root: '+3',
+    suffixes: ['58'],
+  },
+  capital: ['Helsinki'],
+  altSpellings: ['FI', 'Suomi', 'Republic of Finland', 'Suomen tasavalta', 'Republiken Finland'],
+  region: 'Europe',
+  subregion: 'Northern Europe',
+  languages: {
+    fin: 'Finnish',
+    swe: 'Swedish',
+  },
   translations: {
-    deu: { official: "Republik Finnland", common: "Finnland" },
-    fra: { official: "République de Finlande", common: "Finlande" },
-    hrv: { official: "Republika Finska", common: "Finska" },
-    ita: { official: "Repubblica di Finlandia", common: "Finlandia" },
-    jpn: { official: "フィンランド共和国", common: "フィンランド" },
-    nld: { official: "Republiek Finland", common: "Finland" },
-    por: { official: "República da Finlândia", common: "Finlândia" },
-    rus: { official: "Финляндская Республика", common: "Финляндия" },
-    slk: { official: "Fínska republika", common: "Fínsko" },
-    spa: { official: "República de Finlandia", common: "Finlandia" },
-    fin: { official: "Suomen tasavalta", common: "Suomi" },
-    est: { official: "Soome Vabariik", common: "Soome" },
-    zho: { official: "芬兰共和国", common: "芬兰" }
+    ces: {
+      official: 'Finská republika',
+      common: 'Finsko',
+    },
+    deu: {
+      official: 'Republik Finnland',
+      common: 'Finnland',
+    },
+    est: {
+      official: 'Soome Vabariik',
+      common: 'Soome',
+    },
+    fin: {
+      official: 'Suomen tasavalta',
+      common: 'Suomi',
+    },
+    fra: {
+      official: 'République de Finlande',
+      common: 'Finlande',
+    },
+    hrv: {
+      official: 'Republika Finska',
+      common: 'Finska',
+    },
+    hun: {
+      official: 'Finn Köztársaság',
+      common: 'Finnország',
+    },
+    ita: {
+      official: 'Repubblica di Finlandia',
+      common: 'Finlandia',
+    },
+    jpn: {
+      official: 'フィンランド共和国',
+      common: 'フィンランド',
+    },
+    kor: {
+      official: '핀란드 공화국',
+      common: '핀란드',
+    },
+    nld: {
+      official: 'Republiek Finland',
+      common: 'Finland',
+    },
+    per: {
+      official: 'جمهوری فنلاند',
+      common: 'فنلاند',
+    },
+    pol: {
+      official: 'Republika Finlandii',
+      common: 'Finlandia',
+    },
+    por: {
+      official: 'República da Finlândia',
+      common: 'Finlândia',
+    },
+    rus: {
+      official: 'Финляндская Республика',
+      common: 'Финляндия',
+    },
+    slk: {
+      official: 'Fínska republika',
+      common: 'Fínsko',
+    },
+    spa: {
+      official: 'República de Finlandia',
+      common: 'Finlandia',
+    },
+    urd: {
+      official: 'جمہوریہ فن لینڈ',
+      common: 'فن لینڈ',
+    },
+    zho: {
+      official: '芬兰共和国',
+      common: '芬兰',
+    },
   },
   latlng: [64, 26],
-  demonym: "Finnish",
   landlocked: false,
-  borders: ["NOR", "SWE", "RUS"],
-  area: 338424
-}
+  borders: ['NOR', 'SWE', 'RUS'],
+  area: 338424,
+  flag: '🇫🇮',
+  demonyms: {
+    eng: {
+      f: 'Finnish',
+      m: 'Finnish',
+    },
+    fra: {
+      f: 'Finlandaise',
+      m: 'Finlandais',
+    },
+  },
+};
 ```
 
 ## License
