@@ -23,3 +23,7 @@ export function findCountryByIso2(countryCode: string): Country | null {
   }
   return country;
 }
+
+export function getCountries(): Country[] {
+  return data;
+}
